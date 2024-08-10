@@ -9,7 +9,7 @@ document.querySelector("#btn").addEventListener("click", () => {
     const card = document.getElementById("card");
     card.classList.remove("hidden");
     card.classList.add("flex");
-    
+
     // Create img element
     const img = document.createElement("img");
     img.src = data["avatar_url"];
@@ -23,8 +23,8 @@ document.querySelector("#btn").addEventListener("click", () => {
 
     // Create p element
     const p = document.createElement("p");
-    p.textContent = data["bio"];
-    p.classList.add("text-gray-600", "text-center");
+    p.textContent = "Followers: "+data["followers"];
+    p.classList.add("text-gray-600", "text-center", "font-medium");
 
     // Append elements to card
     card.appendChild(img);
